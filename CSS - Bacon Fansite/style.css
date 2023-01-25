@@ -1,0 +1,35 @@
+/************************** TAG  SELECTORS ******************************/
+
+h1{
+    color: blue;
+    font-size: 100px;
+}
+
+img{
+    background-color: red;
+}
+
+/**************************** CLASS SELECTOR ******************************/
+
+.bacon{
+    background-color: green;
+}
+
+.broccoli{
+    background-color: red;
+}
+
+.circular{
+    background-color: black;
+}
+
+/****************************** ID SELECTOR *********************************/
+#heading{
+    color: aqua;
+}
+
+
+/******************** PSEUDO SELECTOR **************************************/
+.chng:hover{
+    background-color: gold;
+}
