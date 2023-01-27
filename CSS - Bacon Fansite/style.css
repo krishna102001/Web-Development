@@ -20,7 +20,7 @@ img{
 }
 
 .circular{
-    background-color: black;
+    border-radius: 50%;
 }
 
 /****************************** ID SELECTOR *********************************/
