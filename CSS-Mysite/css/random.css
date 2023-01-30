@@ -1,0 +1,78 @@
+/******** In Relative position property its shift realtiive to its original postions ********/
+
+/******** mtlb vo apne original position ke according shift ho gha bs **********/
+
+/* .red{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position:relative;
+    left: 200px;
+}
+.yellow{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position:relative;
+    left: 400px;
+}
+.blue{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    position:relative;
+    right: 410px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+    right:210px;
+} */
+
+/********* In Absolute Position property it shift relative to its parent tag **********/
+
+/********* mtlb vo parent tag ke respect pe uska postion change ho gha ************/
+
+/* .red{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top: 408px;
+    left: 408px;
+}
+.yellow{
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    top:208px;
+    left:208px;
+}
+.blue{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    position:absolute;
+} */
+
+/********** we use position property to shift the content instead of using margin
+bcz if we use margin property than it will going to affect the layout of other tag 
+also like it will shift other element position also which doesn't happen in position 
+property it doesn't affect the other element position .*********/
+
+/* h3{
+    margin: 0;
+    padding: 0;
+} */
+
+/***** In Fixed position property it fixed that element *********/
+/***** like if user is scrolling and particular element position property is fixed 
+then that element will show entirely through out scrolling **********/
