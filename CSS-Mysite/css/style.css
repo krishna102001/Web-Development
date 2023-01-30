@@ -11,6 +11,12 @@ h1{
 h2{
     font-family: 'Montserrat', sans-serif;
 }
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+.pro{
+    text-decoration: underline;
+}
 .top-container{
     background-color: #DEF5E5;
     padding-top: 100px;
@@ -18,13 +24,9 @@ h2{
 }
 .middle-container{
     background-color: #BCEAD5;
-    height: 200px;
-    width: 200px;
 }
 .bottom-container{
     background-color: #9ED5C5;
-    height: 200px;
-    width: 200px;
 }
 .top-cloud{
     position: absolute;
