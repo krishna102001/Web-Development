@@ -131,3 +131,16 @@ p{
 .pricing-column{
     padding: 3% 2%;;
 }
+
+/* media Query Breakpoints */
+@media(max-width:1024px){
+    #title{
+        text-align: center;
+    }
+    .title-image{
+        position:static;
+        transform: rotate(0);
+    }
+}
+
+/* cta section */
