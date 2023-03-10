@@ -27,13 +27,13 @@ document.querySelector("img.img2").setAttribute("src",secondImageSrc);
 //announce the result accordingly...
 function result(playerFirstNumber,playerSecondNumber){
     if(playerFirstNumber>playerSecondNumber){
-        return "Player 1 Win !";
+        return "🚩 Player 1 Wins!";
     }
     else if(playerFirstNumber<playerSecondNumber){
-        return "Player 2 win !"
+        return "Player 2 wins! 🚩"
     }
     else{
-        return "Draw!"
+        return "Draws!⚔️"
     }
 }
 
