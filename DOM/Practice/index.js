@@ -16,3 +16,27 @@
 
 //5. by querySelectorAll
 // document.querySelectorAll("")   --> through this we can access all element by specifing its class, Id, or tag and store in ARRAY form.
+
+
+// We can change style of html element using Js also and to use css properties we have to use camel casing and value will be given in string form.
+// document.querySelector("h1").style.color = "red";
+// document.querySelector("h1").style.fontSize = "10rem";
+
+
+// Adding a Class Name in Html Element 
+// document.querySelector("h1").classList.add("huge");  --> this will add the class name huge in H1 tag.
+// document.querySelector("h1").classList.remove("huge");  --> this will remove the class name huge in H1 tag.
+// document.querySelector("h1").classList.toggle("huge");  --> this will check if class is already present then it will remove that class name otherwise it will add that class name.
+
+
+
+//Text Manipulation
+// document.querySelector("h1").innerHTML="Good Bye"; --> this will change the text written in the h1 tag in this we can add html tag also with text.
+// document.querySelector("h1").textContent="Hello"; --> this will change the text writtten in the h1 tag
+// document.querySelector("h1").innerHTML="<em>Good Bye</em>" ✅
+// document.querySelector("h1").textContent="<em>Hello</em>" ❌
+
+//Attributes Manipulation
+// document.querySelector("a").attributes; --> this will show all the attributes present in the 'a' tag.
+// document.querySelector("a").getAttribute("href"); --> this will return value assign to this href attributes like www.google.com
+// document.querySelector("a").setAttribute("href" , "https://www.bing.com"); --> this will replace the attribute which ever is assign to its with bing.com .
