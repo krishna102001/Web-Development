@@ -69,3 +69,10 @@
 // }
 // var houseKeeper1 = new HouseKeeper("aniket",20,10,["bathroom","lobby","washroom"]); --> we created a new object houseKeeper1 using "new" keyword before calling constructor function.
 // houseKeeper1.name; --> we can access the name of object using . dot notation 
+
+
+// setTimeout
+// setTimeout(function,time) --> time is 1000 = 1 sec 
+// setTimeout(function(){
+//    console.log("hello");
+// },1000) --> after 1 sec it will call the anymonous function
