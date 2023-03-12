@@ -50,3 +50,7 @@
 // document.querySelector("button").addEventListener("click", function(){  --> this method is called anymonuous function.
 //    alert("hello i got clicked");
 // })
+
+//Audio File
+// var tom1 = new Audio("sounds/tom-1.mp3");
+// tom1.play();
