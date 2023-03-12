@@ -45,15 +45,25 @@ function musicOn(charachter){
     }
 }
 
+function keyAnimation(enterKey){
+    var animateKey= document.querySelector("." + enterKey);
+    animateKey.classList.add("pressed"); //this is helping to adding a pressed class to apply a shadow effect
+    setTimeout(function(){
+        animateKey.classList.remove("pressed");
+    },100)
+}
+
 var numberOfButton=document.querySelectorAll(".drum").length;
 for(var i=0;i<numberOfButton;i++){
     document.querySelectorAll(".drum")[i].addEventListener("click",function (){
         // alert("i got clicked"); --> Anymonous Function is created;
         var Text=this.innerHTML;
         musicOn(Text);
+        keyAnimation(Text);
     });
 }
 
 document.addEventListener("keydown",function(event){
     musicOn(event.key);
+    keyAnimation(event.key);
 })
