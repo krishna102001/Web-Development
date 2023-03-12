@@ -40,3 +40,13 @@
 // document.querySelector("a").attributes; --> this will show all the attributes present in the 'a' tag.
 // document.querySelector("a").getAttribute("href"); --> this will return value assign to this href attributes like www.google.com
 // document.querySelector("a").setAttribute("href" , "https://www.bing.com"); --> this will replace the attribute which ever is assign to its with bing.com .
+
+
+//Event Listeners
+//document.querySelector("button").addEventListener("click",handleClick); -->this will call the function handleClick only when User's click on button.
+// -->Whenever we are using a eventListener we define two parameter first one is "target" and second is "listener".
+// --> In target we define what User will touch,click or type then we have to perform following task("listener")
+// --> In listener we can define function , while we are calling function we don't give paranthesis , if we give paranthesis then it will directly all the function.
+// document.querySelector("button").addEventListener("click", function(){  --> this method is called anymonuous function.
+//    alert("hello i got clicked");
+// })
