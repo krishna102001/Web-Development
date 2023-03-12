@@ -54,3 +54,18 @@
 //Audio File
 // var tom1 = new Audio("sounds/tom-1.mp3");
 // tom1.play();
+
+//KeyBoard Event Listener
+// document.addEventListener("keydown",function(event){ --> when we are using keydown event Listener then it passs the object which is going to store in event arugement.
+//   console.log(event.key); --> we are accessing the Key element from the Object which is store in event section when key was pressed.
+//}) 
+
+//Constructor Function
+// function HouseKeeper(name,age,experience,work){ --> whenever we are creating constructor function we should write the first letter of function name in CAPITAL/BLOCK. 
+//    this.name=name;  --> this keyword is use to reference the object variable. 
+//    this.age=age;    --> still i am confuse related to this keyword.
+//    this.experience=experience;
+//    this.work=work;
+// }
+// var houseKeeper1 = new HouseKeeper("aniket",20,10,["bathroom","lobby","washroom"]); --> we created a new object houseKeeper1 using "new" keyword before calling constructor function.
+// houseKeeper1.name; --> we can access the name of object using . dot notation 
