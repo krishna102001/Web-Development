@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3932d0e92c.js" crossorigin="anonymous"></script>
     <!-- BootStrap Style Sheet Link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -19,7 +21,7 @@
 
 </head>
 <body>
-    <section id="first">
+    <section class="first">
         <div class="container-fluid">
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -29,16 +31,39 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutMe">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Achievement</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
                     </ul>
                 </div>
             </nav>
+            <div class="row">
+                <div class="col-lg-6 intro">
+                    <h2 class="b-heading">Hello Folks 👋🏻</h2>
+                    <p class="m-heading">I'm Krishna Kant Maurya, passionate about Web development & Software development.</p>
+                    <a class="btn btn-lg btn-outline-light" href="#">Contact Me</a>
+                </div>
+                <div class="col-lg-6 text-centre">
+                        <img class="responsive-img" src="images/archie.png"  alt="archie_photo" width="400px" height="400px">
+                </div>
+            </div>
         </div>
     </section>
-
+    <section class="second" id="aboutMe">
+        <div class="container-fluid">
+            <h2 class="b-heading text-centre about">About Me</h2>
+            <div class="row">
+                <div class="col-lg-5 text-centre">
+                    <img class="rounded-5 responsive-img res-img" src="images/profile-img.JPG" alt="krishna-image" width="300px" height="230px">
+                </div>
+                <div class="col-lg-7">
+                    <p class="x-heading">Hi ! I'm <span class="highlight">Krishna</span>,</p>
+                    <p class="x-heading">I am a Second Year Student of Information Technology undergraduate at <span class="highlight">Gautam Budhha University</span>, India. I enjoy solving problems , building products and tools.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- BootStrap JavaScript Link -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
