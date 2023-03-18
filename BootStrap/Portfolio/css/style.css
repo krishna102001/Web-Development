@@ -83,6 +83,40 @@
     background-color: #865DFF;
     color: #ffff;
 }
+
+/*section fourth*/
+.fourth{
+    background-color: #FFA3FD;
+    color: white;
+    padding-bottom: 10%;
+}
+/*section fifth*/
+.fifth{
+    background-color: #865DFF;
+    color: white;
+}
+/* Sixth Section */
+.sixth{
+    background-color: #000000;
+    color: #ffff;
+}
+.s-logo{
+    color: #ffff;
+    font-size: 1.8rem;
+    margin: 0 12px;
+}
+.f-heading{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.footer-social{
+    padding: 18px 0 10px;
+}
+.fa-brands:hover{
+    color: #FFA3FD;
+}
 /* media breakpoint */
 
 @media (max-width:500px){
@@ -112,5 +146,10 @@
         font-size: 1.3rem;
         font-weight: 400;
     }
+    .d-block{
+        width: 250px;
+        height: 300px;
+    }
 }
+
 
