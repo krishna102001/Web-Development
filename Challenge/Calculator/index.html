@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 class="big-heading">Calculator</h1>
    <div class="container">
     <div class="calculator">
         <form>
@@ -15,34 +19,33 @@
                 <input type="text" name="display" id="display" value="">
             </div>
             <div>
-                <input type="button" value="AC">
-                <input type="button" value="DE">
-                <input type="button" value="%">
-                <input type="button" value="/">
+                <input type="button" value="AC" id="bg-color">
+                <input type="button" value="DE" id="bg-color">
+                <input type="button" value="%" id="bg-color">
+                <input type="button" value="/" id="bg-color">
             </div>
             <div>
                 <input type="button" value="7">
                 <input type="button" value="8">
                 <input type="button" value="9">
-                <input type="button" value="*">
+                <input type="button" value="*" id="bg-color">
             </div>
             <div>
                 <input type="button" value="4">
                 <input type="button" value="5">
                 <input type="button" value="6">
-                <input type="button" value="-">
+                <input type="button" value="-" id="bg-color">
             </div>
             <div>
                 <input type="button" value="1">
                 <input type="button" value="2">
                 <input type="button" value="3">
-                <input type="button" value="+">
+                <input type="button" value="+" id="bg-color">
             </div>
             <div>
-                <input type="button" value="00">
-                <input type="button" value="0">
+                <input type="button" value="0" id="span-two">
                 <input type="button" value=".">
-                <input type="button" value="=">
+                <input type="button" value="=" id="bg-color">
             </div>
         </form>
     </div>
