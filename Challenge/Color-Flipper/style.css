@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    text-align: center;
+    padding: 25% 0;
+}
+.heading{
+    font-size: 60px;
+    padding-bottom: 30px;
+}
+.btn{
+    font-size: 35px;
+    width: 200px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+@media(max-width: 425px){
+    .btn{
+        font-size: 15px;
+        width: 100px;
+        height: 40px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+}
