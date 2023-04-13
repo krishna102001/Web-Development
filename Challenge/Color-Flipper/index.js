@@ -6,6 +6,6 @@ $('.btn').click(function(){
     if(colour[randomNumber]=='Black'){
         $('.heading').css('color','white');
     }
-    $('.container').css('background-color',colour[randomNumber]);
+    $('body').css('background-color',colour[randomNumber]);
     $('.heading').text('Background Color : ' + colour[randomNumber]);
 })
