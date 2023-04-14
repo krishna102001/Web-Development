@@ -51,10 +51,10 @@
 .logo{
     height: 40px;
 }
-/* .link{
+.link{
     height: 0;
     overflow: hidden;
-} */
+}
 .show-link{
     height: 10rem;
 }
