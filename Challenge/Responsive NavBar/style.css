@@ -51,13 +51,7 @@
 .logo{
     height: 40px;
 }
-.link{
-    height: 0;
-    overflow: hidden;
-}
-.show-link{
-    height: 10rem;
-}
+
 @media(max-width:1039px){
     .social-media{
         display: none;
@@ -70,6 +64,13 @@
     .toggleBtn{
         display: inline;
         float: right;
+    }
+    .link{
+        height: 0;
+        overflow: hidden;
+    }
+    .show-link{
+        height: 10rem;
     }
     .toggleBtn:hover{
         transform: rotate(90deg);
