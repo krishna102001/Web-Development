@@ -47,7 +47,7 @@ body{
     font-weight: 300;
 }
 .review-txt{
-    padding-bottom: 10px;
+    padding: 0 25px 10px;
     font-size: 25px;
     font-weight: 300;
 }
