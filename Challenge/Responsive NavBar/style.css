@@ -68,7 +68,7 @@
 }
 @media(max-width:900px){
     .toggleBtn{
-        display: inline-block;
+        display: inline;
         float: right;
     }
     .toggleBtn:hover{
