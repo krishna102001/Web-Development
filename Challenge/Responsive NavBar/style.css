@@ -10,7 +10,7 @@
     align-items: center;
     background-color: #f5f5f5;
     padding: 0.8% 7%;
-    box-shadow: 10px 6px 3px red;
+    box-shadow: 10px 6px 3px #e9e6e6;
     flex-wrap: wrap;
 }
 .toggleBtn{
@@ -64,16 +64,20 @@
     .toggleBtn{
         display: inline;
         float: right;
+        transition: all 0.3s linear;
     }
     .link{
         height: 0;
         overflow: hidden;
+        transition: all 0.3s linear;
     }
     .show-link{
         height: 10rem;
+        transition: all 0.3s linear;
     }
     .toggleBtn:hover{
         transform: rotate(90deg);
+        transition: all 0.3s linear;
     }
     button{
         background: transparent;
