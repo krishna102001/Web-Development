@@ -1,6 +1,6 @@
 var questions=document.querySelectorAll(".question")
 questions.forEach(function(question){   //traversing the each element
-    const btn=question.querySelector(".plus-btn")
+    const btn=question.querySelector(".btn")
     // console.log(btn);
     btn.addEventListener("click",function(){ 
         // console.log(question);
