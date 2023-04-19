@@ -97,3 +97,12 @@ body{
         font-size: 0.4rem;
     }
 }
+.show-text .question-answer {
+    display: block;
+}
+.show-text .minus-btn {
+    display: inline;
+}
+.show-text .plus-btn {
+    display: none;
+}
