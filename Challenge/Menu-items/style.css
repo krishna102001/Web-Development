@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    color: #c59d5f;
+    padding: 2% 2% 0;
+    font-size: 2.5rem;
+}
+.section-centre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px 90px;
+    gap: 20px;
+}
+.title{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.underline{
+    height: 3px;
+    background-color: #c59d5f;
+    margin: 0.5% 45%;
+}
+
+.photo{
+    object-fit: cover;
+    height: 200px;
+    border: 3px solid #c59d5f;
+    border-radius: 10%;
+}
+.menu-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.menu-info{
+    margin-top: 10px;
+}
+header{
+    font-size: 1.21rem;
+}
+.price{
+    margin-right: 10px;
+    color: #c59d5f;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #c59d5f;
+}
+.menu-text{
+    font-size: 1.1rem;
+}
+@media(max-width:1254px){
+    .underline{
+        margin: 0.5% 42%;
+    }
+    .menu-text{
+        font-size: 1rem;
+    }
+    header{
+        font-size: 1.02rem;
+    }
+    .menu-items{
+        grid-template-columns: 200px 1fr;
+    }
+    .photo{
+        width: 200px;
+    }
+}
+@media(max-width:768px){
+    .menu-text{
+        font-size: 1.25rem;
+    }
+    .menu-items{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    header{
+        font-size: 1.4rem;
+    }
+    .underline{
+        margin: 0 37%;
+    }
+    .menu-info{
+        margin: 2px;
+    }
+}
+@media(max-width:580px){
+    h2{
+        font-size: 1.8rem;
+    }
+    .section-centre{
+        margin: 20px 40px;
+    }
+    .menu-text{
+        font-size: 0.73rem;
+    }
+    .menu-items{
+        grid-template-columns: 100px 1fr;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .photo{
+        width: 100px;
+        height: 100px;
+    }
+    header{
+        font-size: 0.87rem;
+    }
+    .menu-info{
+        margin: 0;
+    }
+}
+@media(max-width:325px){
+    header{
+        font-size: 0.65rem;
+    }
+    .menu-text{
+        font-size: 0.55rem;
+    }
+}
