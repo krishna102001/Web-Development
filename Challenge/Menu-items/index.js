@@ -1,12 +1,12 @@
 const menu = [
     {
-      id: 1,
-      title: "buttermilk pancakes",
-      category: "breakfast",
-      price: 15.99,
-      img: "./images/item-1.jpeg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
-    },
+        id: 1,
+        title: "buttermilk pancakes",
+        category: "breakfast",
+        price: 15.99,
+        img: "./images/item-1.jpeg",
+        desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      },
     {
       id: 2,
       title: "diner double",
@@ -72,3 +72,69 @@ const menu = [
       desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
   ];
+var sectionCentre=document.querySelector('.section-centre');
+var btnContainer=document.querySelector('.btn-container');
+window.addEventListener("DOMContentLoaded",function(){
+    displayMenu(menu);
+    displayButton();
+})
+function displayMenu(menu){
+    var display=menu.map(function(item){
+        // console.log(item);
+        return `<article class="menu-items">
+        <img src=${item.img} class="photo" alt="item-image">
+        <div class="menu-info">
+            <header>
+                <h4 class="item">${item.title}</h4>
+                <h4 class="price">$${item.price}</h4>
+            </header>
+            <div class="menu-text">
+                <p>${item.desc}</p>
+            </div>
+        </div>
+        </article>`
+    })
+    display=display.join("");
+    // console.log(display);
+    sectionCentre.innerHTML=display;
+}
+function displayButton(){
+    const categories=menu.reduce(function(values,item){
+        // console.log(values);
+        // console.log(item);
+        if (!values.includes(item.category)) {
+            values.push(item.category);
+          }
+        //   console.log(values);
+          return values;
+    },["all"]);
+    // console.log(categories);
+    var categoryBtn=categories.map(function(item){
+        // console.log(item);
+        return `<button type="button" class="filter-btn" data-id=${item}>${item}</button>`
+    })
+    categoryBtn=categoryBtn.join("");
+    // console.log(categoryBtn);
+    btnContainer.innerHTML=categoryBtn;
+    const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+    // console.log(filterBtns);
+
+    filterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
+        // console.log(e.currentTarget.dataset);
+        const category = e.currentTarget.dataset.id;
+        const menuCategory = menu.filter(function (menuItem) {
+        // console.log(menuItem.category);
+            if (menuItem.category === category) {
+                // console.log(menuItem);
+                return menuItem;
+            }
+        });
+        if (category === "all") {
+            displayMenu(menu);
+        } else {
+            displayMenu(menuCategory);
+        }
+        });
+    });
+}
