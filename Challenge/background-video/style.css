@@ -77,3 +77,8 @@ header::after{
 .hide{
     z-index: -9999;
 }
+@media(max-width:425px){
+    h1{
+        font-size: 2.8rem;
+    }
+}
