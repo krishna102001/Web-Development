@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #e7e6e6;
+}
+.container{
+    padding: 7% 5%;
+    display: flex;
+    width: 100%;
+}
+.giveawayImg{
+    width: 700px;
+    height: 400px;
+}
+.info{
+    margin: 3% 0 0 2.5%;
+}
+.info-header{
+    font-size: 2.2rem;
+    font-weight:600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: rgb(39, 98, 98);
+    padding-bottom: 8px;
+}
+.info-mini{
+    font-size: 1.08rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    color: rgb(65, 64, 64);
+}
+.info-text p{
+    margin: 7% 0;
+    color: grey;
+    font-size: 1.1rem;
+}
+.deadline{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.deadline-time{
+    width: 70px;
+    height: 73px;
+    background-color: rgb(9, 9, 32);
+    margin-right: 3%;
+    text-align: center;
+    color: #e7e7e7;
+    padding: 2% 0;
+}
+.deadline-time h4{
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+    letter-spacing: 0.3rem;
+}
+span{
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14rem;
+}
+@media(max-width:1024px){
+    .giveawayImg{
+        width: 500px;
+        height: 300px;
+    }
+    .info-header{
+        font-size: 1.8rem;
+    }
+    .info-mini{
+        font-size: 0.7rem;
+    }
+    .info-text p{
+        margin: 5% 0;
+        font-size: 0.9rem;
+    }
+    .deadline-time{
+        width: 65px;
+        height: 67px;
+    }
+    .deadline-time h4{
+        font-size: 1.4rem;
+    }
+    span{
+        font-size: 0.7rem;
+    }
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        padding: 7%;
+    }
+    .giveawayImg{
+        width: 100%;
+        object-fit: cover;
+    }
+    .info{
+        max-width: 35rem;
+    }
+    .deadline-time{
+        width: 57px;
+        height: 60px;
+    }
+    .deadline-time h4{
+        font-size: 1.1rem;
+    }
+    .span{
+        font-size: 0.6rem;
+    }
+}
+@media(max-width:425px){
+    .giveawayImg{
+        height: 250px;
+    }
+    .info-header{
+        font-size: 1.5rem;
+    }
+    .info-mini{
+        font-size: 0.6rem;
+    }
+    .info-text p{
+        font-size: 0.7rem;
+    }
+    .deadline-time{
+        width: 53px;
+        height: 55px;
+    }
+    .deadline-time h4{
+        font-size: 0.9rem;
+    }
+    .span{
+        font-size: 0.5rem;
+    }
+}
+@media(max-width:375px){
+    .info-header{
+        font-size: 1.28rem;
+        letter-spacing: 0.1rem;
+    }
+    .info-mini{
+        font-size: 0.55rem;
+        letter-spacing: 0.1rem;
+    }
+    .info-text p{
+        font-size: 0.65rem;
+    }
+}
