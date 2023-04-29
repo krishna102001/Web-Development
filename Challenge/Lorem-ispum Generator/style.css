@@ -32,9 +32,12 @@ body{
 }
 .lorem-text{
     margin: 3% auto;
-    text-align: center;
+    text-align: left;
     max-width: 50rem;
     font-size: 1.4rem;
+}
+.lorem-text p{
+    padding-bottom: 2%;
 }
 @media(max-width:425px){
     .container{
