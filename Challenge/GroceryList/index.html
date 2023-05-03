@@ -6,9 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery List</title>
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/3932d0e92c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="grocery">
+            <form class="grocery-form">
+                <h4 class="alerts">"hello"</h4>
+                <h2 class="heading">Grocery List</h2>
+                <input type="text" class="ans" id="grocerys" placeholder="e.g. eggs">
+                <button type="submit" class="btn">submit</button>
+            </form>
+            <div class="grocery-container">
+                <div class="grocery-list">
+                    <article class="grocery-item">
+                        <p class="title">Milk</p>
+                        <div class="btn-container">
+                            <button type="button" class="edit-btn">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button type="button" class="delete-btn">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <button class="clear-btn">clear items</button>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
