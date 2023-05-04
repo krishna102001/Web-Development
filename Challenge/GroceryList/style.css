@@ -101,6 +101,12 @@ body{
     border: none;
     cursor: pointer;
 }
+.grocery-container{
+    display: none;
+}
+.show-container{
+    display: block;
+}
 @media(max-width:425px){
     .grocery{
         width: 350px;
