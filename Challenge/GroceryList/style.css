@@ -108,10 +108,25 @@ body{
     display: block;
 }
 @media(max-width:425px){
+    .container{
+        margin: 2%;
+    }
     .grocery{
-        width: 350px;
+        width: 300px;
+    }
+    .heading{
+        font-size: 2.2rem;
     }
     .ans{
-        width: 200px;
+        width: 150px;
+    }
+    .title{
+        font-size: 1.1rem;
+    }
+    .edit-btn{
+        font-size: 1rem;
+    }
+    .delete-btn{
+        font-size: 1rem;
     }
 }
