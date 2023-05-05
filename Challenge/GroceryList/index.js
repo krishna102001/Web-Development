@@ -15,7 +15,7 @@ function displayAlert(value,text){
      alert.classList.remove(value);   
     },2000);
 }
-
+clearBtn.addEventListener('click',clearItems);
 form.addEventListener('submit',function(e){
     e.preventDefault();
     // console.log(e);
@@ -55,17 +55,39 @@ form.addEventListener('submit',function(e){
         displayAlert('danger','please enter the value');
     }
 })
-function deleteItem(){
-    console.log('deleted');
+function deleteItem(e){
+    const element=e.currentTarget.parentElement.parentElement;
+    const id =element.dataset.id;
+    console.log(element);
+    console.log(id);
+    list.removeChild(element);
+    if(list.children.length===0){
+        container.classList.remove('show-container');
+    }
+    displayAlert("danger",'item removed');
+    setDefault();
 }
 function editItem(e){
     // console.log('edited');
     const element=e.currentTarget.parentElement.parentElement;
+    console.log(element);
     editElement = e.currentTarget.parentElement.previousElementSibling;
-    grocery.value=editElement;
+    console.log(editElement);
+    grocery.value=editElement.innerHTML;
     editFlag=true;
     editID=element.dataset.id;
     submitBtn.textContent="edit";
+}
+function  clearItems(){
+    const item=document.querySelectorAll(".grocery-item");
+    if(item.length>0){
+        item.forEach(function(items){
+            list.removeChild(items);
+        })
+    }
+    container.classList.remove("show-container");
+    displayAlert("success","empty list");
+    setDefault();
 }
 function setDefault(){
     editFlag=false;
