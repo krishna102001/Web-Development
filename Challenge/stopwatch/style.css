@@ -36,3 +36,12 @@ body{
     font-weight: 200;
     cursor: pointer;
 }
+@media(max-width:375px){
+    .container{
+        font-size: 4rem;
+    }
+    .m-btn{
+        font-size: 1.2rem;
+        width: 70px;
+    }
+}
