@@ -72,6 +72,7 @@ inputBtn.forEach(function(e){
 submitBtn.addEventListener('click',function(){
     checkAnswer(val);
     ques();
+    unchecked();
 })
 let marks=0,count=0;
 nextBtn.addEventListener('click',ques);
@@ -95,6 +96,11 @@ function ques(){
         let score= (marks/question.length)*100;
         alert(`Congratulations, You Scored ${score}%`);
     }
+}
+function unchecked(){
+    inputBtn.forEach(function(e){
+        e.checked=false;
+    })
 }
 function checkAnswer(k){
     // console.log(k);
