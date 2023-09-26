@@ -13,7 +13,7 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/contact",(req,res)=>{
-    res.send("<h1>Contact Me</h1><p>+91-6388851459</p>")
+    res.send("<h1>Contact Me</h1><h3>+91-6388851459</h3>")
 })
 
 app.listen(port,()=>{
