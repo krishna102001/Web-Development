@@ -21,11 +21,11 @@
     <!-- List goes here if current second is even. -->
     <!-- Otherwise it should display the following: -->
     <!-- <p>No items to display</p> -->
-    <% for(let i=0;i<items.length;i++){ %>
+    <% items.forEach(fruit => {%>
       <li>
-        <%= items[i] %>
+        <%= fruit %>
       </li>
-    <% } %>
+    <% }); %>
   </ul>
   <% } else { %>
   <p>No items to display</p>
