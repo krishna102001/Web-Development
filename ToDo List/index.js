@@ -15,6 +15,7 @@ app.use(express.static("public"));
 
 app.get("/",(req,res)=>{
     list = [];
+    work=[];
     res.render("index.ejs",{weekday : weekday[new Date().getDay()], month : month[new Date().getMonth()]});
 })
 
@@ -23,9 +24,13 @@ app.get("/today",(req,res)=>{
 })
 
 app.get("/work",(req,res)=>{
-    res.render("index.ejs",{weekday : weekday[new Date().getDay()], month : month[new Date().getMonth()],list:work});
+    res.render("work.ejs",{work:work});
 })
-
+app.post("/wSubmit",(req,res)=>{
+    work.push(req.body["newItem"]);
+    // console.log(list);
+    res.render("work.ejs",{work:work});
+})
 app.post("/submit",(req,res)=>{
     // console.log(req.body["newItem"]);
     list.push(req.body["newItem"]);
