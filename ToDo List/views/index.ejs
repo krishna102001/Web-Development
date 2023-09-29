@@ -1,0 +1,21 @@
+<%- include("header.ejs")%>
+<main>
+    <div class="container">
+        <div class="heading"><% if(locals.weekday){ %> <%= weekday%><%}%>, <% if(locals.month){ %> <%= month %> <% } %> <%= new Date().getDate() %></div>
+        <form action="/submit" method="post" class="inputForm">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off" required>
+            <button type="submit" name="list">+</button>
+        </form>
+        <div class="box">
+            <% if(locals.list){ %>
+                <% for(let i=0;i<list.length;i++){ %>
+                    <div class="item">
+                        <input type="checkbox">
+                        <p><%= list[i] %></p>
+                    </div>
+                <% }%>
+            <% } %>
+        </div>
+    </div>
+</main>
+<%- include("footer.ejs") %>
