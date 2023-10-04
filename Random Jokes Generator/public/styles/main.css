@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Comic Neue', cursive;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    font-size: 7rem;
+    font-weight: 700;
+    padding-top: 3px;
+}
+.form-container{
+    margin: 30px 0px 0px;
+    max-width: 600px;
+}
+.form-container form{
+    text-align: center;
+}
+.category{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.form-select{
+    width: 200px;
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    border: none;
+    /* box-shadow: 4px 3px 3px rgb(241, 237, 237); */
+    font-family: 'Comic Neue', cursive;
+    margin-right:10px;
+}
+.btn{
+    width: 100px;
+    height: 34px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: white;
+    font-family: monospace;
+    letter-spacing: 0.09rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.jokebox{
+    margin-top: 50px;
+    max-width: 500px;
+    border: 0.5px solid rgb(97, 95, 95);
+    min-height: 100px;
+    /* max-height: 240px; */
+    background-color: rgb(237, 237, 237);
+    box-shadow: 4px 3px 2px rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 2rem;
+}
+.jokebox p{
+    font-family: monospace;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    font-weight: 800;
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

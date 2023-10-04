@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Joke Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Joke Generator 😂</div>
+      <div class="form-container">
+        <form action="/" method="POST" class="form">
+          <label for="Cat" class="category">Category : </label>
+          <select name="category"  class="form-select">
+            <option value="Any">Any</option>
+            <option value="Programming">Programming</option>
+            <option value="Dark">Dark</option>
+          </select>
+          <button type="submit" class="btn" class="form-submit">submit</button>
+        </form>
+        <% if(locals.joke) {%>
+        <div class="jokebox">
+            <p> <%= joke %> </p>
+        </div>
+        <% } %>
+      </div>
+    </div>
+<%- include("particles/footer.ejs") %>
