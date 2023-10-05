@@ -29,10 +29,11 @@ app.get("/", async (req, res) => {
 
 app.post("/", async (req, res) => {
   const category = req.body.category;
-//   console.log(category);
+  const lang = req.body.language;
+  // console.log(category);
   try {
     const result = await axios.get(
-      API_URL + "joke/" + category + "?type=single"
+      API_URL + "joke/" + category + "?type=single&lang=" + lang
     );
     const data = result.data;
     // console.log(data);
