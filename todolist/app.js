@@ -16,7 +16,7 @@ app.use(express.static("public"));
 // const workItems = [];
 
 //connect mongodb
-mongoose.connect("mongodb://localhost:27017/todolist");
+mongoose.connect("mongodb+srv://admin-krishna:Test123@cluster0.bugotr5.mongodb.net/todolist");
 
 // defining the schema
 const itemSchema = new mongoose.Schema({
