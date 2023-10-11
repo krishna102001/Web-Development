@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+const encrypt = require("mongoose-encryption");
 
 //setup port 
 const app = express();
@@ -22,6 +23,10 @@ const userSchema = new mongoose.Schema({
     username : String,
     password : String
 });
+
+//adding encryption
+const secret = "Thisismylittlesecretbro.";
+userSchema.plugin(encrypt,{secret : secret,encryptedFields : ["password"]});
 
 //creating model
 const User = mongoose.model("User",userSchema);
