@@ -1,3 +1,4 @@
+require("dotenv").config();
 //jshint esversion:6
 // importing files
 const express = require("express");
@@ -5,6 +6,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 const encrypt = require("mongoose-encryption");
+const { configDotenv } = require("dotenv");
 
 //setup port 
 const app = express();
@@ -25,8 +27,8 @@ const userSchema = new mongoose.Schema({
 });
 
 //adding encryption
-const secret = "Thisismylittlesecretbro."; //it must be saved in .env files otherwise if hacker found it then they can easily crack our password
-userSchema.plugin(encrypt,{secret : secret,encryptedFields : ["password"]});
+// console.log(process.env.API_KEY);
+userSchema.plugin(encrypt,{secret : process.env.SECRET,encryptedFields : ["password"]});
 
 //creating model
 const User = mongoose.model("User",userSchema);
