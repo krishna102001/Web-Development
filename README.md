@@ -8,6 +8,7 @@
 7. ADVANCE JAVASCRIPT(EVENT LISTENER , CONSTRUCTOR FUNCTION) ✅
 8. Jquery ✅
 9. Unix Command ✅
-10. Node.js ❌
-11. Database ❌
-12. React ❌
+10. Node.js ✅
+11. Database ✅
+12. Authentication and Security ❌
+13. React ❌
