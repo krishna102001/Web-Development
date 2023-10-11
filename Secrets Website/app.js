@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
 });
 
 //adding encryption
-const secret = "Thisismylittlesecretbro.";
+const secret = "Thisismylittlesecretbro."; //it must be saved in .env files otherwise if hacker found it then they can easily crack our password
 userSchema.plugin(encrypt,{secret : secret,encryptedFields : ["password"]});
 
 //creating model
