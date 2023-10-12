@@ -6,7 +6,9 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
 // const encrypt = require("mongoose-encryption");
-const md5 = require("md5");
+// const md5 = require("md5");
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
 
 //setup port 
 const app = express();
@@ -49,31 +51,35 @@ app.get("/register",(req,res)=>{
 })
 
 app.post("/register",(req,res)=>{
-    const user = new User({
-        username : req.body.username,
-        password : md5(req.body.password)
+    bcrypt.hash(req.body.password,saltRounds,function(error,hash){
+        const user = new User({
+            username : req.body.username,
+            password : hash
+        });
+        try{
+            user.save();
+            res.render("secrets");
+        }catch(error){
+            console.log("Sorry cannot register Right Now!!!")
+        }
     });
-    try{
-        user.save();
-        res.render("secrets");
-    }catch(error){
-        console.log("Sorry cannot register Right Now!!!")
-    }
 });
 
 app.post("/login",async (req,res)=>{
-    const password = md5(req.body.password);
+    const password =req.body.password;
     const username = req.body.username;
     // console.log(password);
     try{
         const founduser = await User.findOne({username : username});
         // console.log(founduser);
-        if(password == founduser.password){
-            res.render("secrets");
-        }
-        else{
-            console.log("wrong passwords!!!");
-        }
+        bcrypt.compare(password,founduser.password,function(error,results){
+            if(results === true){
+                res.render("secrets");
+            }
+            else{
+                console.log("wrong passwords!!!");
+            }
+        })
     }catch(error){
         console.log("Cannot found the users.");
     }
