@@ -10,5 +10,8 @@
 9. Unix Command ✅
 10. Node.js ✅
 11. Database ✅
-12. Authentication and Security ❌
-13. React ❌
+12. Authentication and Security ✅
+13. React ✅
+14. PostgreSql ❌
+15. Flexbox ❌
+16. Grid ❌
