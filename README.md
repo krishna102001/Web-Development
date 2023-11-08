@@ -13,5 +13,5 @@
 12. Authentication and Security ✅
 13. React ✅
 14. PostgreSql ❌
-15. Flexbox ❌
-16. Grid ❌
+15. Flexbox ✅
+16. Grid ✅
