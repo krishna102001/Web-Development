@@ -1,5 +1,5 @@
 # Web-Development
-1. BAISC HTML ✅
+1. BASIC HTML ✅
 2. BASIC CSS ✅
 3. BASIC BootStrap Framework ✅
 4. TINDOG WEBSITE ✅
